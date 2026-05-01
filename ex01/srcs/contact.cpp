@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:56:51 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/01 14:31:43 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/01 20:18:36 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,26 @@ Contact::Contact() {}
 
 Contact::Contact(std::string name, std::string num)
 {
-	_name = name;
+	_Ñname = name;
 	_num = num;
 }
 
-std::string	Contact::get_name() const
+std::string	Contact::getFirstName() const
 {
-	return _name;
+	return _first_name;
 }
 
-std::string	Contact::get_number() const
+std::string	Contact::getLastName() const
+{
+	return _last_name;
+}
+
+std::string	Contact::getNickName() const
+{
+	return _nick_name;
+}
+
+std::string	Contact::getNumber() const
 {
 	return _num;
 }

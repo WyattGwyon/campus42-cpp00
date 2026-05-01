@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 15:14:06 by clouden           #+#    #+#             */
-/*   Updated: 2026/04/30 22:14:01 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/01 20:18:36 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ void	PhoneBook::addContact(Contact &c)
 	std::cin >> name;
 	std::cout << "Enter num: ";
 	std::cin >> num;
-	c = Contact(name, num);
+	c = setContact(_first_name, _last_name, _nick_name, _num, _secret);
 }
+
 void	PhoneBook::print(const Contact &c)
 {
 	std::cout << c.get_name() << c.get_number() << std::endl;
