@@ -6,12 +6,11 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 13:06:43 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/01 19:40:41 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/04 16:24:01 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
-using std::string
 
 int main(void)
 {
@@ -26,9 +25,9 @@ int main(void)
 		std::cout << "Select and option [ADD, SEARCH, EXIT]: ";
 		std::cin >> option;
 		if (option == "ADD")
-			pb.addContact(c);
+			pb.addContact();
 		if (option == "SEARCH")
-			pd.printContacts();
+			std::cout << "will search" << std::endl;
 		else if (option == "EXIT")
 			break;
 	}

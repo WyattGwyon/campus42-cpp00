@@ -6,25 +6,25 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:56:30 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/01 20:18:36 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/04 17:47:41 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#pragma once
 #include <iostream>
 #include <string>
 
 class	Contact
 {
 private:
-	std::string	_first_name;
-	std::string	_last_name;
-	std::string	_nick_name;
-	std::string	_num;
-	std::string	_secret;
+	std::string	first_name_;
+	std::string	last_name_;
+	std::string	nick_name_;
+	std::string	num_;
+	std::string	secret_;
 
 public:
 	Contact();
-	~Contact();
+//	~Contact();
 
 	void setContact(const std::string &firstname,
 					const std::string &lastname,

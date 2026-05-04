@@ -6,36 +6,54 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 14:56:51 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/01 20:18:36 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/04 17:10:22 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "contact.hpp"
 
-Contact::Contact() {}
+Contact::Contact() :
+	first_name_(""),
+	last_name_(""),
+	nick_name_(""),
+	num_(""),
+	secret_("")
+{}
 
-Contact::Contact(std::string name, std::string num)
+void	Contact::setContact(const std::string &first_name, 
+							const std::string &last_name, 
+							const std::string &nick_name, 
+							const std::string &num, 
+							const std::string &secret)
 {
-	_Ñname = name;
-	_num = num;
+	first_name_ = first_name;
+	last_name_ = last_name;
+	nick_name_ = nick_name;
+	num_ = num;
+	secret_ = secret;
 }
 
 std::string	Contact::getFirstName() const
 {
-	return _first_name;
+	return first_name_;
 }
 
 std::string	Contact::getLastName() const
 {
-	return _last_name;
+	return last_name_;
 }
 
 std::string	Contact::getNickName() const
 {
-	return _nick_name;
+	return nick_name_;
 }
 
 std::string	Contact::getNumber() const
 {
-	return _num;
+	return num_;
+}
+
+std::string	Contact::getSecret() const
+{
+	return secret_;
 }
