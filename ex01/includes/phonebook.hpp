@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 15:14:56 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/04 17:47:42 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/05 15:22:43 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #pragma once
@@ -15,12 +15,14 @@
 class PhoneBook
 {
 private:
-	Contact	contacts[8];
-	int		i;
+	Contact	contacts_[8];
+	int		idx_;
+	int		cnt_;
 public:
 	PhoneBook();
 //	~PhoneBook();
 	
 	void	addContact();
+	void	search();
 	void	print(const Contact &c);
 };

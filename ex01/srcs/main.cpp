@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 13:06:43 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/04 16:24:01 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/05 15:33:15 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main(void)
 		if (option == "ADD")
 			pb.addContact();
 		if (option == "SEARCH")
-			std::cout << "will search" << std::endl;
+			pb.search();
 		else if (option == "EXIT")
 			break;
 	}
