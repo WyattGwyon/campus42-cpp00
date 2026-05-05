@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 15:14:56 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/05 15:22:43 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/05 20:36:47 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #pragma once
@@ -23,6 +23,7 @@ public:
 //	~PhoneBook();
 	
 	void	addContact();
+	void	table(int &i);
 	void	search();
 	void	print(const Contact &c);
 };

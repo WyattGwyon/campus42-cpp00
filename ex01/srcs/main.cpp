@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 13:06:43 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/05 15:33:15 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/05 19:50:08 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@ int main(void)
 	std::string	name;
 	std::string	num;
 	std::string	option;
+	pb = PhoneBook();
 
 	while (true)
 	{
-		pb = PhoneBook();
-		std::cout << "Select and option [ADD, SEARCH, EXIT]: ";
-		std::cin >> option;
+		std::cout << "\n";
+		std::cout << "Select an option [ADD, SEARCH, EXIT]: ";
+		if (!(std::cin >> option))
+			break;
 		if (option == "ADD")
 			pb.addContact();
 		if (option == "SEARCH")
