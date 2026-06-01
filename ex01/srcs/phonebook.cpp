@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 15:14:06 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/05 20:36:24 by clouden          ###   ########.fr       */
+/*   Updated: 2026/06/01 12:56:12 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,15 @@ void	PhoneBook::search()
 {
 	int	i = 0;
 	this->table(i);
+	if (cnt_ == 0)
+	{
+		std::cout << "There are no entries yet..." << std::endl;
+		return ;
+	}
 	std::cout << "Enter an index: ";
 	std::cin >> i;
 	while (i > (cnt_ - 1))
-	{
+ 	{
 		std::cout << i << " is out of range...please choose again.\n";
 		std::cout << "Enter an index: ";
 		std::cin >> i;
