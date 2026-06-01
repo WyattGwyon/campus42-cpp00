@@ -6,7 +6,7 @@
 #    By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/04 11:22:41 by clouden           #+#    #+#              #
-#    Updated: 2026/04/04 12:09:27 by clouden          ###   ########.fr        #
+#    Updated: 2026/06/01 11:33:38 by clouden          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,6 @@ clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm - $(NAME)
+	rm -f $(NAME)
 
 re: clean all
